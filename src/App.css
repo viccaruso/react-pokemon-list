@@ -73,6 +73,10 @@
   text-transform: capitalize;
 }
 
+.pokemon-card a {
+  text-decoration: none;
+}
+
 .pokemon-card img {
   height: 200px;
 }
