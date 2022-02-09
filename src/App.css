@@ -1,3 +1,25 @@
+:root {
+  --bg-lightness: 80%;
+  --grass-bg-color: hsl(100, 52%, var(--bg-lightness));
+  --fire-bg-color: hsl(25, 86%, var(--bg-lightness));
+  --water-bg-color: hsl(222, 82%, var(--bg-lightness));
+  --normal-bg-color: hsl(60, 22%, var(--bg-lightness));
+  --bug-bg-color: hsl(66, 70%, var(--bg-lightness));
+  --ground-bg-color: hsl(44, 66%, var(--bg-lightness));
+  --fighting-bg-color: hsl(3, 66%, var(--bg-lightness));
+  --electric-bg-color: hsl(48, 93%, var(--bg-lightness));
+  --poison-bg-color: hsl(300, 43%, var(--bg-lightness));
+  --fairy-bg-color: hsl(347, 71%, var(--bg-lightness));
+  --ice-bg-color: hsl(180, 45%, var(--bg-lightness));
+  --rock-bg-color: hsl(49, 53%, var(--bg-lightness));
+  --psychic-bg-color: hsl(342, 92%, var(--bg-lightness));
+  --dark-bg-color: hsl(24, 22%, var(--bg-lightness));
+  --steel-bg-color: hsl(240, 20%, var(--bg-lightness));
+  --dragon-bg-color: hsl(258, 93%, var(--bg-lightness));
+  --ghost-bg-color: hsl(263, 27%, var(--bg-lightness));
+  --flying-bg-color: hsl(255, 76%, var(--bg-lightness));
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +54,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -44,12 +67,84 @@
 }
 
 .pokemon-card {
-  border: 1px solid hsl(0deg, 0%, 0%);
   border-radius: 10px;
   width: fit-content;
   margin: 10px;
+  text-transform: capitalize;
 }
 
 .pokemon-card img {
   height: 200px;
+}
+
+.grass-bg {
+  background-color: var(--grass-bg-color);
+}
+
+.fire-bg {
+  background-color: var(--fire-bg-color);
+}
+
+.water-bg {
+  background-color: var(--water-bg-color);
+}
+
+.bug-bg {
+  background-color: var(--bug-bg-color);
+}
+
+.normal-bg {
+  background-color: var(--normal-bg-color);
+}
+
+.ground-bg {
+  background-color: var(--ground-bg-color);
+}
+
+.fighting-bg {
+  background-color: var(--fighting-bg-color);
+}
+
+.electric-bg {
+  background-color: var(--electric-bg-color);
+}
+
+.poison-bg {
+  background-color: var(--poison-bg-color);
+}
+
+.fairy-bg {
+  background-color: var(--fairy-bg-color);
+}
+
+.ice-bg {
+  background-color: var(--ice-bg-color);
+}
+
+.dark-bg {
+  background-color: var(--dark-bg-color);
+}
+
+.psychic-bg {
+  background-color: var(--psychic-bg-color);
+}
+
+.rock-bg {
+  background-color: var(--rock-bg-color);
+}
+
+.steel-bg {
+  background-color: var(--steel-bg-color);
+}
+
+.dragon-bg {
+  background-color: var(--dragon-bg-color);
+}
+
+.ghost-bg {
+  background-color: var(--ghost-bg-color);
+}
+
+.flying-bg {
+  background-color: var(--flying-bg-color);
 }
