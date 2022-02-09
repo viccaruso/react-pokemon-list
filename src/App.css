@@ -63,12 +63,12 @@
 .pokemon-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .pokemon-card {
   border-radius: 10px;
-  width: fit-content;
+  width: 250px;
   margin: 10px;
   text-transform: capitalize;
 }
