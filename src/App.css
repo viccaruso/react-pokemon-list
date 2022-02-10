@@ -68,8 +68,8 @@
 
 .pokemon-card {
   border-radius: 10px;
-  width: 250px;
-  margin: 10px;
+  width: 15rem;
+  margin: 1rem;
   text-transform: capitalize;
 }
 
@@ -77,8 +77,8 @@
   text-decoration: none;
 }
 
-.pokemon-card img {
-  height: 200px;
+.pokemon-card a > div > img {
+  width: 12rem;
 }
 
 .grass-bg {
@@ -151,4 +151,46 @@
 
 .flying-bg {
   background-color: var(--flying-bg-color);
+}
+
+.NA-bg {
+  background-color: hsl(0, 0%, 90%);
+}
+
+h4 span {
+  cursor: pointer;
+  color: green;
+}
+
+.pokedex-entry {
+  width: 50%;
+  margin: 3rem auto;
+  border: 3px solid black;
+  border-radius: 15px;
+  text-transform: capitalize;
+}
+
+.pokedex-types, .pokedex-abilities, .pokedex-stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pokedex-types h2, .pokedex-abilities h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 3rem;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.pokedex-stats h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 3rem;
+  margin: 10px;
+  border-radius: 5px;
 }
