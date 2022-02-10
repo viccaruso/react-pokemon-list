@@ -68,8 +68,8 @@
 
 .pokemon-card {
   border-radius: 10px;
-  width: 250px;
-  margin: 10px;
+  width: 15rem;
+  margin: 1rem;
   text-transform: capitalize;
 }
 
@@ -77,8 +77,8 @@
   text-decoration: none;
 }
 
-.pokemon-card img {
-  height: 200px;
+.pokemon-card a > div > img {
+  width: 12rem;
 }
 
 .grass-bg {
@@ -151,4 +151,9 @@
 
 .flying-bg {
   background-color: var(--flying-bg-color);
+}
+
+h4 span {
+  cursor: pointer;
+  color: green;
 }

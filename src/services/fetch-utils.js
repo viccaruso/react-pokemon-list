@@ -1,10 +1,11 @@
 import { checkError, client } from './client';
 
-export async function fetchAllPokemon() {
+export async function fetchPokemon(start = 1, end = 20) {
   const response = await client
     .from('pokemon')
-    .select();
-    
+    .select()
+    .range(start, end);
+
   return checkError(response);
 }
 
