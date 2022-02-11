@@ -21,7 +21,7 @@ export default function Home() {
   }, [currentPage, perPage]);
 
   return (
-    <div>
+    <div className='home-page'>
       <h4>
         <span onClick={() => { currentPage === 1 ? null : setCurrentPage(currentPage - 1); }}>{'<< '}</span>
         Page: {currentPage}
