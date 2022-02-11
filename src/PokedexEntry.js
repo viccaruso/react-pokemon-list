@@ -19,8 +19,8 @@ export default function PokedexEntry() {
   }, [params.id]);
 
   return (
-    <>
-      <p onClick={history.goBack} style={ { cursor: 'pointer' } }>Return Home</p>
+    <div className='pokedex-container'>
+      <p onClick={history.goBack} style={{ cursor: 'pointer' }}>Return Home</p>
       <div className='pokedex-entry'>
         <div className={`pokedex-name ${pokemon.type_1}-bg`}>
           <h1>{pokemon.pokemon}</h1>
@@ -47,6 +47,6 @@ export default function PokedexEntry() {
           <h4>Speed: {pokemon.speed}</h4>
         </div>
       </div>
-    </>
+    </div>
   );
 }

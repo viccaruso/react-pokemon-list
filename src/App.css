@@ -18,46 +18,23 @@
   --dragon-bg-color: hsl(258, 93%, var(--bg-lightness));
   --ghost-bg-color: hsl(263, 27%, var(--bg-lightness));
   --flying-bg-color: hsl(255, 76%, var(--bg-lightness));
+  --NA-bg-color: hsl(0, 0%, var(--bg-lightness));
 }
 
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Home {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.pokedex-container {
+  width: 100%;
+  height: 100%;
 }
 
 .pokemon-list {
@@ -81,7 +58,70 @@
   width: 12rem;
 }
 
-.grass-bg {
+
+
+h4 span {
+  cursor: pointer;
+  color: green;
+}
+
+.pokedex-entry {
+  width: 50%;
+  margin: 3rem auto;
+  border: 3px solid black;
+  border-radius: 15px;
+  text-transform: capitalize;
+}
+
+.pokedex-entry img {
+  width: 75%;
+}
+
+.pokedex-types, .pokedex-abilities, .pokedex-stats {
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+}
+
+.pokedex-types h2, .pokedex-abilities h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 3rem;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.pokedex-stats h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 3rem;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .pokemon-card {
+    border-radius: 10px;
+    width: 7rem;
+    margin: .5rem;
+    text-transform: capitalize;
+  }
+
+  .pokemon-card a {
+    text-decoration: none;
+  }
+  
+  .pokemon-card a > div > img {
+    width: 5rem;
+  }
+}
+
+
+/* .grass-bg {
   background-color: var(--grass-bg-color);
 }
 
@@ -155,42 +195,4 @@
 
 .NA-bg {
   background-color: hsl(0, 0%, 90%);
-}
-
-h4 span {
-  cursor: pointer;
-  color: green;
-}
-
-.pokedex-entry {
-  width: 50%;
-  margin: 3rem auto;
-  border: 3px solid black;
-  border-radius: 15px;
-  text-transform: capitalize;
-}
-
-.pokedex-types, .pokedex-abilities, .pokedex-stats {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.pokedex-types h2, .pokedex-abilities h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 3rem;
-  margin: 10px;
-  border-radius: 5px;
-}
-
-.pokedex-stats h4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-  height: 3rem;
-  margin: 10px;
-  border-radius: 5px;
-}
+} */
